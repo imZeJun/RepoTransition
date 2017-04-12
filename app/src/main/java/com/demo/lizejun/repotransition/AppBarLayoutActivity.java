@@ -1,24 +1,21 @@
 package com.demo.lizejun.repotransition;
 
-import android.support.design.widget.AppBarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.widget.TextView;
 
 import com.demo.lizejun.repotransition.bean.GridItemBean;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CoordinatorLayoutActivity extends AppCompatActivity {
+public class AppBarLayoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coordinator_layout);
+        setContentView(R.layout.activity_app_bar);
         initView();
         initToolbar();
     }

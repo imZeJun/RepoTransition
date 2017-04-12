@@ -14,15 +14,19 @@ public class MainActivity extends Activity {
     }
 
     public void startContentTransitionDemo(View view) {
-        startActivity(ContentTransitionActivity.class);
+        startActivity(ContentTransitionOriginalActivity.class);
     }
 
-    public void startCoordinatorDemo(View view) {
-        startActivity(CoordinatorLayoutActivity.class);
+    public void startAppBarLayoutDemo(View view) {
+        startActivity(AppBarLayoutActivity.class);
     }
 
     public void startBottomSheetDemo(View view) {
         startActivity(BottomSheetActivity.class);
+    }
+
+    public void startFABDemo(View view) {
+        startActivity(FABActivity.class);
     }
 
     private void startActivity(Class className) {

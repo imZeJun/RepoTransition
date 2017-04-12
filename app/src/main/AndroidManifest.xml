@@ -15,10 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContentTransitionActivity" />
-        <activity android:name=".CTTargetActivity" />
-        <activity android:name=".CoordinatorLayoutActivity" />
-        <activity android:name=".BottomSheetActivity"></activity>
+        <activity android:name=".ContentTransitionOriginalActivity" />
+        <activity android:name=".ContentTransitionTargetActivity" />
+        <activity android:name=".AppBarLayoutActivity" />
+        <activity android:name=".BottomSheetActivity" />
+        <activity android:name=".FABActivity"></activity>
     </application>
 
 </manifest>

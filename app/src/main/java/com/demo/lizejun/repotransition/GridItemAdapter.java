@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.demo.lizejun.repotransition.bean.GridItemBean;
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class GridItemAdapter extends RecyclerView.Adapter<GridItemAdapter.GridItemViewHolder> {
@@ -26,7 +26,7 @@ public class GridItemAdapter extends RecyclerView.Adapter<GridItemAdapter.GridIt
 
     @Override
     public GridItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_grid, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list, parent, false);
         return new GridItemViewHolder(itemView);
     }
 
@@ -64,10 +64,10 @@ public class GridItemAdapter extends RecyclerView.Adapter<GridItemAdapter.GridIt
         ActivityOptionsCompat compat = ActivityOptionsCompat.makeSceneTransitionAnimation(mActivity,
                 Pair.create((View) viewHolder.mImageView, mActivity.getString(R.string.transition_icon_shared)),
                 Pair.create((View) viewHolder.mTitle, mActivity.getString(R.string.transition_title_shared)));
-        Intent intent = new Intent(mActivity, CTTargetActivity.class);
+        Intent intent = new Intent(mActivity, ContentTransitionTargetActivity.class);
         GridItemBean bean = mItems.get(viewHolder.getAdapterPosition());
-        intent.putExtra(CTTargetActivity.KEY_ICON, bean.getIcon());
-        intent.putExtra(CTTargetActivity.KEY_TITLE, bean.getTitle());
+        intent.putExtra(ContentTransitionTargetActivity.KEY_ICON, bean.getIcon());
+        intent.putExtra(ContentTransitionTargetActivity.KEY_TITLE, bean.getTitle());
         mActivity.startActivity(intent, compat.toBundle());
     }
 }

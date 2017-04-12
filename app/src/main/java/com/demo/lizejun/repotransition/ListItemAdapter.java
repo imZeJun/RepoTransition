@@ -9,11 +9,11 @@ import android.widget.TextView;
 import com.demo.lizejun.repotransition.bean.GridItemBean;
 import java.util.List;
 
-public class ListAdapter extends BaseAdapter {
+public class ListItemAdapter extends BaseAdapter {
 
     private List<GridItemBean> mTitles;
 
-    public ListAdapter(List<GridItemBean> titles) {
+    public ListItemAdapter(List<GridItemBean> titles) {
         mTitles = titles;
     }
 
@@ -35,7 +35,7 @@ public class ListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_grid, parent, false);
+            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list, parent, false);
         }
         ImageView iv = (ImageView) convertView.findViewById(R.id.iv_icon);
         TextView tv = (TextView) convertView.findViewById(R.id.tv_title);

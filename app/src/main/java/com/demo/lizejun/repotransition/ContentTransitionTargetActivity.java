@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.demo.lizejun.repotransition.transition.CustomContentTransition;
 
-public class CTTargetActivity extends Activity {
+public class ContentTransitionTargetActivity extends Activity {
 
     public static final String KEY_ICON = "key_icon";
     public static final String KEY_TITLE = "key_title";
@@ -19,7 +19,7 @@ public class CTTargetActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_CONTENT_TRANSITIONS);
-        setContentView(R.layout.activity_ct_target);
+        setContentView(R.layout.activity_content_transition_target);
         setUpViews();
         setUpNormalTransition();
     }
