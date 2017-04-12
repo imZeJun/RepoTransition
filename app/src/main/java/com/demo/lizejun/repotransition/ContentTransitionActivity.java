@@ -5,12 +5,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.transition.Slide;
-import android.view.Gravity;
+import android.transition.ChangeBounds;
 import android.view.Window;
-
 import com.demo.lizejun.repotransition.bean.GridItemBean;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,8 +16,10 @@ public class ContentTransitionActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_content_transition);
         initView();
+        setUpTransition();
     }
 
     private void initView() {
@@ -38,6 +37,11 @@ public class ContentTransitionActivity extends Activity {
         StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+    }
+
+    private void setUpTransition() {
+        Window window = getWindow();
+        window.setSharedElementReenterTransition(new ChangeBounds());
     }
 
 }

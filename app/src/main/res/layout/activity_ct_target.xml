@@ -1,31 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tag="rootView"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
+    <FrameLayout
         android:id="@+id/ll_header"
-        android:orientation="vertical"
+        android:tag="ll_header"
         android:gravity="center"
-        android:background="@drawable/ic_bg"
         android:layout_width="match_parent"
         android:layout_height="150dp">
         <ImageView
-            android:id="@+id/iv_header"
-            android:src="@drawable/ic_1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="10dp"/>
-        <TextView
-            android:id="@+id/tv_header"
-            android:text="我是标题"
-            android:textSize="18sp"
-            android:textColor="@android:color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+            android:id="@+id/iv_bg"
+            android:tag="transition_reveal"
+            android:src="@drawable/ic_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_header"
+                android:transitionName="@string/transition_icon_shared"
+                android:src="@drawable/ic_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/tv_header"
+                android:transitionName="@string/transition_title_shared"
+                android:text="我是标题"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </FrameLayout>
     <TextView
+        android:id="@+id/tv_content"
+        android:tag="transition_translationY"
         android:layout_width="match_parent"
         android:padding="30dp"
         android:textColor="@android:color/white"

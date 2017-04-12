@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 这个不用设置属性 -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/al_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 需要设置属性 -->
+        <TextView
+            android:id="@+id/iv_move_title"
+            android:gravity="center"
+            android:text="layout_scrollFlags=scroll|exitUntilCollapsed|enterAlways"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_dark"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:minHeight="20dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways"/>
+        <TextView
+            android:gravity="center"
+            android:text="没有设置layout_scrollFlags"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

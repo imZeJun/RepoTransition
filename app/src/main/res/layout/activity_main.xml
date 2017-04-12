@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.demo.lizejun.repotransition.MainActivity">
     <TextView
         android:text="Content Transition Demo"
         android:layout_width="match_parent"
         android:layout_height="66dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_orange_dark"
         android:onClick="startContentTransitionDemo"/>
-</RelativeLayout>
+    <TextView
+        android:text="CoordinatorDemo"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="startCoordinatorDemo"/>
+    <TextView
+        android:text="BottomSheetDemo"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="startBottomSheetDemo"/>
+</LinearLayout>

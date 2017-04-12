@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RepoTransition</string>
+    <string name="transition_icon_shared">transition_icon_shared</string>
+    <string name="transition_title_shared">transition_title_shared</string>
 </resources>

@@ -17,6 +17,14 @@ public class MainActivity extends Activity {
         startActivity(ContentTransitionActivity.class);
     }
 
+    public void startCoordinatorDemo(View view) {
+        startActivity(CoordinatorLayoutActivity.class);
+    }
+
+    public void startBottomSheetDemo(View view) {
+        startActivity(BottomSheetActivity.class);
+    }
+
     private void startActivity(Class className) {
         Intent intent = new Intent(this, className);
         startActivity(intent);
