@@ -16,7 +16,11 @@ public class DrawerLayoutActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drawer_layout_under_toolbar);
+        setContentView(R.layout.activity_drawer_layout_navigation);
+        initView();
+    }
+
+    private void initView() {
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //1.决定显示.
@@ -31,5 +35,4 @@ public class DrawerLayoutActivity extends AppCompatActivity {
         //4.同步状态
         mActionBarDrawerToggle.syncState();
     }
-
 }
