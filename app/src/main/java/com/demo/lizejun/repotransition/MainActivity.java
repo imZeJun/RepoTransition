@@ -29,6 +29,10 @@ public class MainActivity extends Activity {
         startActivity(FABActivity.class);
     }
 
+    public void startDrawerDemo(View view) {
+        startActivity(DrawerLayoutActivity.class);
+    }
+
     private void startActivity(Class className) {
         Intent intent = new Intent(this, className);
         startActivity(intent);

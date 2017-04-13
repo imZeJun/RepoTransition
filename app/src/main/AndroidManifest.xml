@@ -19,7 +19,8 @@
         <activity android:name=".ContentTransitionTargetActivity" />
         <activity android:name=".AppBarLayoutActivity" />
         <activity android:name=".BottomSheetActivity" />
-        <activity android:name=".FABActivity"></activity>
+        <activity android:name=".FABActivity" />
+        <activity android:name=".DrawerLayoutActivity"></activity>
     </application>
 
 </manifest>
