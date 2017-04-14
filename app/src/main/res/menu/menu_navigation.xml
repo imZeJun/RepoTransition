@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/item1"
+            android:icon="@mipmap/ic_launcher"
+            android:title="group1 - item1"/>
+        <item
+            android:id="@+id/item2"
+            android:icon="@mipmap/ic_launcher"
+            android:title="group1 - item2"/>
+    </group>
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/item3"
+            android:icon="@mipmap/ic_launcher"
+            android:title="group2 - item1"/>
+        <item
+            android:id="@+id/item4"
+            android:icon="@mipmap/ic_launcher"
+            android:title="group2 - item2"/>
+    </group>
     <item
-        android:id="@+id/favorite"
-        android:icon="@mipmap/ic_launcher"
-        android:title="收藏"/>
-    <item
-        android:id="@+id/wallet"
-        android:icon="@mipmap/ic_launcher"
-        android:title="钱包"/>
-    <item
-        android:id="@+id/photo"
-        android:icon="@mipmap/ic_launcher"
-        android:title="相册"/>
-    <item
-        android:id="@+id/file"
-        android:icon="@mipmap/ic_launcher"
-        android:title="文件"/>
+        android:id="@+id/item5"
+        android:title="group3">
+        <menu>
+            <item
+                android:id="@+id/item6"
+                android:icon="@mipmap/ic_launcher"
+                android:title="group3 - item1"/>
+            <item
+                android:id="@+id/item7"
+                android:icon="@mipmap/ic_launcher"
+                android:title="group3 - item2"/>
+        </menu>
+    </item>
 </menu>

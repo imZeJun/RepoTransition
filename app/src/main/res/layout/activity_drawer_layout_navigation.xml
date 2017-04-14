@@ -27,9 +27,5 @@
         </FrameLayout>
     </LinearLayout>
     <!-- 侧滑布局 -->
-    <android.support.design.widget.NavigationView
-        android:layout_width="300dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/layout_drawer_navigation_header"/>
+    <include layout="@layout/layout_drawer_navigation"/>
 </android.support.v4.widget.DrawerLayout>
