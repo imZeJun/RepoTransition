@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="200dp"
+    tools:context="com.demo.lizejun.repotransition.SnackBarActivity">
+    <TextView
+        android:id="@+id/show_snack_bar"
+        android:text="showSnackBar"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="showSnackBar"/>
+</android.support.design.widget.CoordinatorLayout>

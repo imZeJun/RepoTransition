@@ -20,7 +20,11 @@
         <activity android:name=".AppBarLayoutActivity" />
         <activity android:name=".BottomSheetActivity" />
         <activity android:name=".FABActivity" />
-        <activity android:name=".DrawerLayoutActivity"></activity>
+        <activity android:name=".DrawerLayoutActivity" />
+        <activity android:name=".SnackBarActivity" />
+        <activity android:name=".NavigationBarActivity" />
+        <activity android:name=".TabLayoutActivity" />
+        <activity android:name=".TextInputActivity"></activity>
     </application>
 
 </manifest>

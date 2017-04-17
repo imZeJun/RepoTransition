@@ -33,6 +33,22 @@ public class MainActivity extends Activity {
         startActivity(DrawerLayoutActivity.class);
     }
 
+    public void startSnackBarDemo(View view) {
+        startActivity(SnackBarActivity.class);
+    }
+
+    public void startNavigationBar(View view) {
+        startActivity(NavigationBarActivity.class);
+    }
+
+    public void startTabLayout(View view) {
+        startActivity(TabLayoutActivity.class);
+    }
+
+    public void textInputLayoutActivity(View view) {
+        startActivity(TextInputActivity.class);
+    }
+
     private void startActivity(Class className) {
         Intent intent = new Intent(this, className);
         startActivity(intent);
