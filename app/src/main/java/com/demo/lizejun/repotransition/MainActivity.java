@@ -49,6 +49,10 @@ public class MainActivity extends Activity {
         startActivity(TextInputActivity.class);
     }
 
+    public void vectorDrawable(View view) {
+        startActivity(VectorDrawableActivity.class);
+    }
+
     private void startActivity(Class className) {
         Intent intent = new Intent(this, className);
         startActivity(intent);

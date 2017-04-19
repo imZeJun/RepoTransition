@@ -24,7 +24,8 @@
         <activity android:name=".SnackBarActivity" />
         <activity android:name=".NavigationBarActivity" />
         <activity android:name=".TabLayoutActivity" />
-        <activity android:name=".TextInputActivity"></activity>
+        <activity android:name=".TextInputActivity" />
+        <activity android:name=".VectorDrawableActivity"></activity>
     </application>
 
 </manifest>

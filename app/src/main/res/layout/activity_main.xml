@@ -69,13 +69,12 @@
         android:background="@android:color/holo_orange_dark"
         android:onClick="startNavigationBar"/>
     <TextView
-        android:text="textInputLayoutActivity"
+        android:text="vectorDrawable"
         android:layout_width="match_parent"
         android:layout_height="66dp"
         android:gravity="center"
         android:layout_margin="5dp"
         android:textColor="@android:color/white"
         android:background="@android:color/holo_orange_dark"
-        android:onClick="textInputLayoutActivity"/>
-
+        android:onClick="vectorDrawable"/>
 </LinearLayout>
