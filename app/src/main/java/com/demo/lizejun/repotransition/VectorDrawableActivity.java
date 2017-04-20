@@ -15,13 +15,5 @@ public class VectorDrawableActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vector_drawable);
-        mAnimateView = (ImageView) findViewById(R.id.iv_dynamic);
-        mAnimatedVectorDrawable = (AnimatedVectorDrawable) mAnimateView.getDrawable();
-        mAnimateView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mAnimatedVectorDrawable.start();
-            }
-        });
     }
 }

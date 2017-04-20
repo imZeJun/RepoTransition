@@ -1,0 +1,6 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/arrow_down_vector">
+    <target
+        android:animation="@anim/arrow_down_object_animator"
+        android:name="path_arrow_down"/>
+</animated-vector>
